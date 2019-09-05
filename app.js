@@ -15,7 +15,7 @@ var app = express();
 app.use(helmet());
 // Set up mongoose connection
 var mongoose = require('mongoose');
-var mongoDB = 'mongodb+srv://mongoAdmin:mozillaCourse@cluster0-ntyds.mongodb.net/local_library?retryWrites=true&w=majority';
+var mongoDB = 'mongodb+srv://mongoAdmin:mozillaCourse@cluster0-ntyds.mongodb.net/local_library?retryWrites=true';
 //var dev_db_url = 'mongodb+srv://mongoAdmin:mozillaCourse@cluster0-ntyds.mongodb.net/local_library?retryWrites=true&w=majority';
 //var mongoDB = process.env.MONGODB_URI || dev_db_url;
 mongoose.connect(mongoDB, { useNewUrlParser:true });
